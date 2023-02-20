@@ -2,15 +2,15 @@
 require_once("init.php");
 require_once("check-login.php");
 
-$id = $_REQUEST["id"];
-$day = $_REQUEST["day"];
-$predmet = $_REQUEST["predmet"];
-$student = $_REQUEST["student"];
-$prepod = $_REQUEST["prepod"];
-$present = $_REQUEST["present"];
-$mark = $_REQUEST["mark"];
+$id = $_POST["id"];
+$day = $_POST["day"];
+$predmet = $_POST["predmet"];
+$student = $_POST["student"];
+$prepod = $_POST["prepod"];
+$present = $_POST["present"];
+$mark = $_POST["mark"];
 
-switch($_REQUEST["oper"]) {
+switch($_POST["oper"]) {
 
  case "add":
     $sql = "insert into journal (day, predmet_id, student_id, prepod_id, pres, mark) values ('"
