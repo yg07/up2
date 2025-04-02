@@ -98,7 +98,7 @@ $sql = "SELECT  j.id,
 
 $result = mysqli_query($db_handler,$sql) or die ("Невозможно выполнить SQL запрос! ".mysqli_error($db_handler));
 
-$responce = new \stdClass();
+$responce = new stdClass();
 $responce -> page = $page;
 $responce -> total = $totalpages;
 $responce -> records = $count;
