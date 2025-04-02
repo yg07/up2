@@ -141,9 +141,8 @@ var prmSearch = {width: 700, recreateFilter: true, multipleSearch: false, multip
   });  
   
 	
-  $(function(){
-    $("ul.sf-menu").superfish();
-  });
+
+   $("ul.sf-menu").superfish();
 
 });
 
